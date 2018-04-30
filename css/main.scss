@@ -3,7 +3,6 @@
 @import "variables";
 @import "menu.min.css";
 
-
 //Global
 body{
   color: $black;
@@ -285,7 +284,8 @@ header{
 // SPECIALS MENU
 #SpecialMenu{
   padding: 100px 0 0 0;
-  background-image: url("../img/paisley.png");
+  background-image: url("../img/bg3.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   h2, h5{
     text-align: center;
