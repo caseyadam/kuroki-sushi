@@ -17,7 +17,6 @@ h2{
 h5{
   color: $titleColor;
   font-size: 0.7rem;
-  // font-weight: 300;
   margin: .5rem 0 1rem;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -142,8 +141,6 @@ em{
   }
 }
 
-
-// ???
 @font-face {
   font-family: road_rage;
   src: url('/fonts/Road_Rage.otf');
@@ -279,12 +276,15 @@ header{
     background-size: cover;
     margin: 0 auto;
   }
+  .video-img-mobile{
+    display: none;
+  }
 }
 
 // SPECIALS MENU
 #SpecialMenu{
   padding: 100px 0 0 0;
-  background-image: url("../img/bg3.svg");
+  background-image: url("../img/bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   h2, h5{
@@ -402,8 +402,8 @@ header{
   text-align: right;
   height: 100%;
   .side-img{
-    height: 200px;
-    width: 400px;
+    height: 45%;
+    width: 65%;
     text-align: left;
     img{
       width: 100%;
@@ -425,18 +425,18 @@ header{
       color: $black;
     }
   }
-  .arrows{
-    display: inline-block;
-    .fa-arrow-left, .fa-arrow-right{
-      font-size: 1.5rem;
-      padding: 20px 10px;
-      color: $paragraphColor;
-      cursor: pointer;
-    }
-    .fa-arrow-left.ready, .fa-arrow-right.ready{
-      color:black;
-    }
-  }
+  // .arrows{
+  //   display: inline-block;
+  //   .fa-arrow-left, .fa-arrow-right{
+  //     font-size: 1.5rem;
+  //     padding: 20px 10px;
+  //     color: $paragraphColor;
+  //     cursor: pointer;
+  //   }
+  //   .fa-arrow-left.ready, .fa-arrow-right.ready{
+  //     color:black;
+  //   }
+  // }
 }
 
 // CONTACT US
@@ -531,12 +531,60 @@ footer{
 }
 
 
-
-
 // MEDIA QUERIES
 
 //phone
 @media (min-width: 0px) and (max-width: 600px) {
+
+  header{
+    nav{
+      text-align: center;
+      a{
+        margin: 3px 0;
+      }
+    }
+  }
+
+  .video-img{
+    display: none;
+  }
+
+  .video-img-mobile{
+    display: block !important;
+    max-width: 400px;
+    height: 550px;
+    background-image: linear-gradient(150deg, rgba(0,0,0,0) 0%, rgba(13,13,13,0) 19%, rgba(69,69,69,1) 100%),url("../img/chef.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  #OurStory{
+    padding: 5px 0;
+    .success-text{
+      padding: 10px;
+    }
+  }
+
+  #SpecialMenu{
+    padding: 10px 0 0 0;
+  }
+
+  .reserve-btn{
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+
+  #Reviews{
+    padding: 10px 0 0 0;
+    .side-img{
+      height: 100%;
+      width: 100%;
+    }
+    .review-text{
+      padding: 10px;
+    }
+  }
 
 }
 
