@@ -185,7 +185,32 @@ header{
   }
 }
 
-// TOP IMAGE
+// MOBILE NAV
+.bars{
+  height: 36px;
+  width: 36px;
+}
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.menu-container li {
+  display: inline-block;
+  padding: 10px 15px;
+} 
+#mob-nav-ul{
+  display: none;
+}
+.active{
+  display: block;
+}
+.mob-nav-a{
+  text-decoration: none;
+}
+
+// BANNER IMAGE
 #TopImg{ 
   background:black;
   position: relative;
@@ -537,14 +562,22 @@ footer{
 @media (min-width: 0px) and (max-width: 600px) {
 
   header{
+    .logo{
+      margin-top: 24px;
+    }
     nav{
-      text-align: center;
-      a{
-        margin: 3px 0;
-      }
+      // text-align: center;
+      display: none;
+      // a{
+      //   margin: 3px 0;
+      // }
     }
   }
 
+  // MOBILE NAV
+  
+
+  // VIDEO IMAGE
   .video-img{
     display: none;
   }
